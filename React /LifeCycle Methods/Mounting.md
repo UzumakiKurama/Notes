@@ -1,20 +1,20 @@
 # Mounting
- Component has mounted means that now user can see it on screen. Below lifecycles are called in following order during the mounting phase :- 
+    Component has mounted means that now user can see it on screen. Below lifecycles are called in following order during the mounting phase :- 
 
  ## Constructor
-    It's feature of class based components, and not something special that react provides. You use it to initialize the component's state and bind methods to the component's instance
+It's feature of class based components, and not something special that react provides. You use it to initialize the component's state and bind methods to the component's instance
 
 ## static getDerivedStateFromProps(nextState, prevProps)
-    The method should return an object that represents the updated state of the component, or null if no state update is necessary.
+The method should return an object that represents the updated state of the component, or null if no state update is necessary.
 
-    It's important to note that getDerivedStateFromProps() is a static method, which means it does not have access to the this keyword and cannot interact with the component's instance methods or properties.
-    This method us not used anymore in the latest version of React.
+It's important to note that getDerivedStateFromProps() is a static method, which means it does not have access to the this keyword and cannot interact with the component's instance methods or properties.
+This method us not used anymore in the latest version of React.
 
 ## render()
-    It constructs the components's virtual DOM representation, it is responsible for printing components on screen. This lifecycle is called everytime there is a change in props or state. At this point everthing is mounted and visible on screen. 
+It constructs the components's virtual DOM representation, it is responsible for printing components on screen. This lifecycle is called everytime there is a change in props or state. At this point everthing is mounted and visible on screen. 
 
 ## componentDidMount()
-    This lifecycle method is used to perform actions like DOM manipulation, external api requests, event listeners etc. It is triggered only once after the component gets rendered on screen.
+This lifecycle method is used to perform actions like DOM manipulation, external api requests, event listeners etc. It is triggered only once after the component gets rendered on screen.
 
 
  ```js
