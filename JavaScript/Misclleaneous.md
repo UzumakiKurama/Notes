@@ -11,7 +11,7 @@ helloWorld()
 
 function helloMars(){
     str = "hello mars"
-    console.log(mars) // This will give RefferenceError.
+    console.log(str) // This will give RefferenceError.
 }
 hellowMars()
 ```
@@ -19,7 +19,7 @@ hellowMars()
 There are 4 ways to declare objects in javascript :- 
 + using object literal
 + using Object.create()
-+ using constructor (functions)
++ using constructor (functions) --> constructors are functions that are called using <span style="color : red; ">new</span>
 + using ES6 Classes 
 
 ```js 
