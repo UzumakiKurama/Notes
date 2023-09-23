@@ -1,5 +1,5 @@
 # Updating Phase
-    This phase takes place when there is some change in UI due to user actions, or it could be anyother actions such as a setTimeout function which changes the UI after some time interval. The following functions or lifecycles gets called in the below order :- 
+This phase takes place when there is some change in UI due to user actions, or it could be anyother actions such as a setTimeout function which changes the UI after some time interval. The following functions or lifecycles gets called in the below order :- 
 
 ## getDerivedStatesFromProps()
 The getDerivedStateFromProps is a static method in React used for updating the state of a component based on changes in its props. It's a lifecycle method available in both class components and functional components (using React hooks) and is often used when you need to synchronize component state with incoming props.

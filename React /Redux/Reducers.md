@@ -1,7 +1,7 @@
 # What is Reducer
 Whenever we dispatch an action to the store, it goes to a reducer.Reducers are pure functions, as the name suggests reducers take in two parameters one is <span style="font-style: italic; font-weight: bold"> CURRENT STATE </span> and other is ofcourse an <span style="font-style: italic; font-weight: bold"> ACTION </span>. Then it reduces into a single entity the new updated instance of state.
 
-    Once an action is dispatched all the REDUCERS are activated. Each reducer filters out the action using a switch statement switching on the action type. Whenever the switch statement matches with the action passed, the corresponding reducers take the necessary action to make the update and return a fresh new instance of the global state.
+Once an action is dispatched all the REDUCERS are activated. Each reducer filters out the action using a switch statement switching on the action type. Whenever the switch statement matches with the action passed, the corresponding reducers take the necessary action to make the update and return a fresh new instance of the global state.
 
 ```js
 

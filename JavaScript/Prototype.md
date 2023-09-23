@@ -103,3 +103,25 @@ consoel.log(arrowFunction.prototype) // undefined
 ```
 We can create instances of these functions using new operator, which is generally used to implement 
 [Prototypal inheritance](Inheritance.md)
+
+Let's try entering some more code into the console:
+```js
+function doSomething() {}
+doSomething.prototype.foo = "bar";
+const doSomeInstancing = new doSomething();
+doSomeInstancing.prop = "some value";
+console.log("doSomeInstancing.prop:     ", doSomeInstancing.prop);
+console.log("doSomeInstancing.foo:      ", doSomeInstancing.foo);
+console.log("doSomething.prop:          ", doSomething.prop);
+console.log("doSomething.foo:           ", doSomething.foo);
+console.log("doSomething.prototype.prop:", doSomething.prototype.prop);
+console.log("doSomething.prototype.foo: ", doSomething.prototype.foo);
+```
+
+    doSomeInstancing.prop:      some value
+    doSomeInstancing.foo:       bar
+    doSomething.prop:           undefined
+    doSomething.foo:            undefined
+    doSomething.prototype.prop: undefined
+    doSomething.prototype.foo:  bar
+

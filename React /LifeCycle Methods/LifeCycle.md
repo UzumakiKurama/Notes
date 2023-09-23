@@ -1,6 +1,6 @@
 # LifeCycle Methods
-    A component lifecycle has three phases. These lifecycle methods are used only inside class based components. 
-    It is advised to use functional components, where we can use hooks to perform actions that are done using lifecycle methods in class based components. 
+A component lifecycle has three phases. These lifecycle methods are used only inside class based components. 
+It is advised to use functional components, where we can use hooks to perform actions that are done using lifecycle methods in class based components. 
 
 
 <span style="color:red">Mounting Phase</span> 

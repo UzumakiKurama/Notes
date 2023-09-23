@@ -1,5 +1,5 @@
 # Mounting
-    Component has mounted means that now user can see it on screen. Below lifecycles are called in following order during the mounting phase :- 
+Component has mounted means that now user can see it on screen. Below lifecycles are called in following order during the mounting phase :- 
 
  ## Constructor
 It's feature of class based components, and not something special that react provides. You use it to initialize the component's state and bind methods to the component's instance

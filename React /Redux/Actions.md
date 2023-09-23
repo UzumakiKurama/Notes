@@ -8,7 +8,7 @@ Actions are plain js object which describes events that changes the state of an 
 }
 ```
 
-    1. TYPE :- A string property that describes the nature or purpose of the action. Action types are typically defined as constants to ensure consistency and prevent typos. For example:
+1. TYPE :- A string property that describes the nature or purpose of the action. Action types are typically defined as constants to ensure consistency and prevent typos. For example:
 
 ```js 
 const ADD_TODO = 'ADD_TODO';
@@ -16,7 +16,7 @@ const REMOVE_TODO = 'REMOVE_TODO';
 const UPDATE_USER = 'UPDATE_USER';
 ```
 
-    2. PAYLOAD :- The payload property is optional but is often used to include any data or information required to carry out the action. For instance, if you have an action to add a new item to a list, the payload might contain the details of the item being added.
+2. PAYLOAD :- The payload property is optional but is often used to include any data or information required to carry out the action. For instance, if you have an action to add a new item to a list, the payload might contain the details of the item being added.
 
 ```js 
 {
