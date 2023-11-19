@@ -1,5 +1,6 @@
 # Variable Declarations
-In javascript we can decalare/use variables using <span style="color:red; font-size:22px"> var, let </span> and <span style="color:red; font-size:22px"> const </span> keywords.
+In javascript we can decalare/use variables using <span style="color:red; font-size:22px"> var, let </span> and <span style="color:red; font-size:22px"> const </span> keywords.<br/>
+Only let and const variables have block scope
  
 ## <span style="color : red; font-size : 20px; font-style:italic"> All about var </span>
 
@@ -56,4 +57,21 @@ let num = 100;
 + const variables are same as let variables with regards to scope and hoisting i.e. they are also hoisted but without a default initial value.
 + const variables can neither be redeclared or reassigned.
 
+Imortant difference between primitive type values and reference type values declared with const
+```js
+const age = 90 // This is immutable.A primitive type value cannot be changed
+
+const person = {
+    age : 30;
+    name : "Marcus"
+}
+
+const me = person; 
+me.age = 25; 
+
+console.log(person); // {age: 25, name : "Marcus" }
+console.log(me); //// {age: 25, name : "Marcus" }
+```
+Objects are stored as reference types in call stack. This means that the value at this address contains a reference to the object created in the heap. Since objects can be big in size they are created in heap. 
+In the above scenario we are not mutating the object's value in call stack, we are changing the object in the heap. 
  

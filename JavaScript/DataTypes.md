@@ -5,7 +5,7 @@
  ### Null and Undefined 
  + Null and Undefined are both different things.
  + When a variable is created but not initiliazed, its value at that     time is undefined i.e. absence of definintion. 
- + Null means unintentional absence of data 
+ + Null means intentional absence of data 
 ``` js
     let a ;
     console.log(a) // Undefined
